@@ -4,8 +4,8 @@ This repository is set up for GitHub Pages hosting of the generated PreTeXt HTML
 
 ## Layout
 
-- `pset1/` through `pset5/` contain the problem set HTML sites
-- `pset1-solutions/` through `pset5-solutions/` contain the solutions HTML sites
+- `psetX` folders contain the problem set HTML sites
+- `psetX-solutions` folders contain the solutions HTML sites
 - `index.html` is a simple landing page for the published site
 - `sync-from-local.ps1` refreshes this repo from the local PreTeXt build outputs
 
