@@ -13,7 +13,9 @@ $mappings = @(
     @{ Source = Join-Path $courseRoot 'pset4\output\web'; Destination = Join-Path $repoRoot 'pset4' },
     @{ Source = Join-Path $courseRoot 'pset4\output\web-solutions'; Destination = Join-Path $repoRoot 'pset4-solutions' },
     @{ Source = Join-Path $courseRoot 'pset5\output\web'; Destination = Join-Path $repoRoot 'pset5' },
-    @{ Source = Join-Path $courseRoot 'pset5\output\web-solutions'; Destination = Join-Path $repoRoot 'pset5-solutions' }
+    @{ Source = Join-Path $courseRoot 'pset5\output\web-solutions'; Destination = Join-Path $repoRoot 'pset5-solutions' },
+    @{ Source = Join-Path $courseRoot 'pset6\output\web'; Destination = Join-Path $repoRoot 'pset6' },
+    @{ Source = Join-Path $courseRoot 'pset6\output\web-solutions'; Destination = Join-Path $repoRoot 'pset6-solutions' }
 )
 
 foreach ($mapping in $mappings) {
