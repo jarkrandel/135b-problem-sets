@@ -491,7 +491,7 @@ P = \begin{bmatrix}
 <div class="autopermalink" data-description="Item a"><a href="#solutions-24-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="solutions-24-2">
-<div class="para" id="solutions-24-2-1">Compute <span class="process-math">\(\prob(N=1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#solutions-24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="solutions-24-2-1">Compute <span class="process-math">\(\prob(N=1\mid U\geq3)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#solutions-24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item b"><a href="#solutions-24-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
 </li>
@@ -518,11 +518,18 @@ P = \begin{bmatrix}
 <div class="autopermalink" data-description="Item a"><a href="#solutions-26-1" title="Copy heading and permalink for Item a" aria-label="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="solutions-26-2">
-<div class="para" id="solutions-26-2-1">As in (a), the probability we succeed on a roll given <span class="process-math">\(U = u\)</span> is <span class="process-math">\(\frac{5-u}{5}\text{.}\)</span> We get<div class="autopermalink" data-description="Paragraph"><a href="#solutions-26-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="solutions-26-2-1">As in (a), the probability we succeed on a roll given <span class="process-math">\(U = u\)</span> is <span class="process-math">\(\frac{5-u}{5}\text{.}\)</span> The events <span class="process-math">\(U=3\)</span> and <span class="process-math">\(U=4\)</span> are equally likely in this scenario, giving<div class="autopermalink" data-description="Paragraph"><a href="#solutions-26-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="solutions-26-2-2">
 \begin{equation*}
-\prob(N=1) = \sum_{u=1}^4\prob(N=1|U=u)\prob(U=u) = \frac{1}{4}\sum_{u=1}^4\frac{5-u}{5} = \frac{1}{20}(10)=\frac{1}{2}.
+\frac{5-3}{5}\cdot\frac{1}{2} + \frac{5-4}{5}\cdot\frac{1}{2} = \frac{3}{10}.
+\end{equation*}
+</div>
+<div class="para" id="solutions-26-2-3">To do this more mechanically,<div class="autopermalink" data-description="Paragraph"><a href="#solutions-26-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="solutions-26-2-4">
+\begin{equation*}
+\prob(N=1\mid U\geq3) = \frac{\prob(N=1,U\geq3)}{\prob(U\geq 3)} = \frac{P(N=1,U=3) + \prob(N=1,U=4)}{1/2} = 2\cdot(\frac{2}{5}\cdot\frac{1}{4} + \frac{1}{5}\cdot\frac{1}{4}) = \frac{3}{10}.
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Item b"><a href="#solutions-26-2" title="Copy heading and permalink for Item b" aria-label="Copy heading and permalink for Item b">🔗</a></div>
